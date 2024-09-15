@@ -19,7 +19,7 @@ const io = require('socket.io')(server, {
 
 // Connect to the database
 connectDB();
-
+console.log(process.env.frontendUrl);
 // Initialize middleware
 app.use(express.json());
 
