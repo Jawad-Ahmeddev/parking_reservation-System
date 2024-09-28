@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "./index.js",  // This points to your backend folder and entry file
+      "src": ".backend/index.js",  // This points to your backend folder and entry file
       "use": "@vercel/node"
     }
   ],
