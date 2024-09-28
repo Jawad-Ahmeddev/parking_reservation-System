@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js", // or your entry file like server.js/app.js
+      "src": "backend/index.js",  // This points to your backend folder and entry file
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js" // or server.js
+      "dest": "/backend/index.js"  // This ensures all requests are routed to your backend
     }
   ]
 }
