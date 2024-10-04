@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require('socket.io')(server, {
   cors: {
-    origin: `${process.env.frontendUrl}`, // Replace with your frontend URL
+    origin: `https://parkingreservationmanagement.vercel.app`, // Replace with your frontend URL
     methods: ['GET', 'POST']
   }
 });
@@ -25,7 +25,7 @@ app.use(express.json());
 
 // Set up CORS to allow requests from your Angular frontend
 app.use(cors({
-  origin: `${process.env.frontendUrl}`,
+  origin: `https://parkingreservationmanagement.vercel.app`,
 }));
 
 // Pass io to your routes
